@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INFO PANEL</title>
+	<link rel = "stylesheet" href = "myStyle.css">
+</head>
+<body>
+	<div class = "header">
+		<h1>andela logo</h1>
+	</div>
+			
+	<div class = "wrapper">
+		<div>
+			<marquee direction = "left" scrolldelay ="50" class ="scroll">
+			<p>Welcome to Andela Boot Camp Day 3, Please kindly fill out this form. Your details are 
+				very safe with us.</p></marquee></div>
+
+			<div class = "form">
+			<form action = "" method = "">
+			<fieldset class = "p_Info">
+				<legend>Personal Information:</legend>
+					<p><label for ="first name">First Name: </label>
+					<input type ="text" name = "name" id = "name"/></p>
+					<label for ="last name">Second Name:</label>
+					 <input type ="text" name = "name" id = "name"/></p>
+
+					<p><label for = "email">Email: </label>
+					<input type ="text" name="email" id = "email" required="required"/></p>
+					<p><label for = "city">City: </label>
+					<input type ="text" name="city" id = "city"/></p>
+					<p><label for = "address line 1">Mobile Number: </label>
+					<input type ="text" name="mobile" id = "mobile"  required="required"/></p>
+					<p><label for = "address line 1">Address Line 1: </label>
+					<input type ="text" name="address1" id = "address"/></p>
+					<p><label for = "address line 2">Address Line 2: </label>
+					<input type ="text" name="address2" id = "address"/></p>
+					<p><label for = "gender">Gender:</label> 
+						Male<input type = "radio" name = "gender" id = "male"/>
+						Female <input type = "radio" name = "gender" id = "Female"/><br/></p>
+			</fieldset><br/><br/>
+			<fieldset>
+				<legend>Other Information:</legend>
+				<p>What is your choice means of transportation?</p>
+				<select means = "Vehicles">
+				<optgroup label = "Ancient means">
+					<option value = "By Foot">By Foot</option>
+					<option value = "Bicycle">Bycicle</option>
+				</optgroup>
+				<optgroup label = "Modern means">
+					<option value = "Car">Car</option>
+					<option value = "Bus">Bus</option>
+					<option value = "Train">Train</option>
+				<script>
+					if(value == "Train")
+					alert("You are really ancient");
+				</script>
+				</optgroup>
+				</select>
+				<p>How do you spend your leisure time?</p>
+				Hang out with friend? <input type = "checkbox" name ="leisure" id = "Hang out"/>
+				Play Games? <input type = "checkbox" name ="leisure" id = "Play Games" checked = "checked"/>
+				Read Novels? <input type = "checkbox" name ="leisure" id = "Novels"/>
+				<p id = "submit"><input type = "submit" value = "Reset">
+				<!--Resetting the page in case user makes mistake -->
+				<script>
+					if(value == "Reset")
+					location.reload();
+				</script>
+					<input type = "submit" value = "Submit"></p>
+				<script>
+					if(value == "Submit"){
+					document.getElementById("myForm").submit();
+					alert("Thanks, You'll get a mail from us very soon");}
+				</script>
+			</fieldset>
+			</form>
+			</div>
+	
+	</div>
+
+</body>
+<footer>
+<div class = "footer"><br/>
+	<a href="">Legal Information</a> | 
+	<a href="">Privacy Policy</a> | <a href="">Terms of Use</a>| 
+	Copyright &copy: Oluwole Andela BootcampDayIII 2016
+	</div>
+</footer>
+</html>
